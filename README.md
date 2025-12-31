@@ -57,7 +57,7 @@ If you remember the olden days of computers, you would initially insert a floppy
 
 The program is booted with the program already stored in the ROM, and the `reset` button acts as the power on button, and it starts executing the program.
 
-There is a `make` command that takes care of this for you, and you can modify the `ROM_FILE` argument to load the ROM with the binary program of your desire.
+There is a `make` command that takes care of this for you, and you can modify the `ROM_FILE` argument to load the ROM with the binary program of your choice.
 
 ```bash
 make Computer ROM_FILE=programs/add_first_n.bin               
@@ -71,6 +71,6 @@ WARNING: Reached safety limit of 1000 cycles
 RAM[0] =  1275
 ```
 
-And indeed 1 + 2 + 3 + ... + 49 + 50 = 1575.
+And indeed 1 + 2 + 3 + ... + 49 + 50 = 1275.
 
 So our computer works as expected. We can write even more complex programs, and perhaps write even a virtual machine, and compiler to be able to write programs in even higher-level languages.
